@@ -1,0 +1,9 @@
+<?php
+    
+    // Include the necessary files
+    require_once "conn.php";
+   
+
+//	$sql = "SELECT * FROM product";
+	echo "OK"
+?>

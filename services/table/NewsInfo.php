@@ -1,0 +1,24 @@
+<?php
+require_once(realpath(dirname(__FILE__) . "/../tools/rest.php"));
+
+class NewsInfo extends REST{
+	
+	private $mysqli = NULL;
+	private $db = NULL; 
+	
+	public function __construct($db) {
+		parent::__construct();
+		$this->db = $db;
+		$this->mysqli = $db->mysqli;
+    }
+	
+    
+	
+	public function findAllForrice(){
+		$query="SELECT * FROM category c WHERE c.draft=0 ORDER BY c.priority ASC";
+		//$query="SELECT * FROM category c WHERE id=24";
+		return $this->db->get_list($query);
+	}
+
+}	
+?>
