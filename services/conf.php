@@ -7,9 +7,9 @@ class CONF {
 
     /* Data configuration for database */
     public $DB_SERVER   = "localhost";
-    public $DB_USER     = "spntqm_web";
-    public $DB_PASSWORD = "Dhaka2023*@";
-    public $DB_NAME     = "spntqm_web";
+    public $DB_USER     = "root";
+    public $DB_PASSWORD = "";
+    public $DB_NAME     = "spntqm";
 
     /* [ IMPORTANT ] be careful when edit this security code, use AlphaNumeric only*/
     /* This string must be same with security code at Android, if its different android unable to submit order */
